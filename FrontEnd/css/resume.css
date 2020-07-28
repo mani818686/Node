@@ -18,23 +18,33 @@ th,td{
     text-align: center;
     padding: 20px;
 }
+th{
+    color:orangered;
+}
+td{
+    color:black;
+}
 table, th, td {
-    border: 1px solid rgb(53, 161, 68);
+    border: 1px solid rgb(21, 219, 48);
     border-collapse: collapse;
   }
 .personal
 {  height:2.5%;
     background-color: rgb(36, 150, 216);
-    width:60%
+    width:10%
 }
 .tech
 {  height:2.5%;
     background-color: rgb(216, 36, 186);
-    width:60%
+    width:10%
 }
 .name
 {
     height:2.5%;
     background-color: rgb(231, 139, 19);
-    width:60%
+    width:12%
+}
+.ab
+{
+    float:right;
 }
