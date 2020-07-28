@@ -1,0 +1,37 @@
+h1
+{
+    margin-left:10%;
+    color:#360;
+}
+p{
+
+    font-size: 15px;;
+}
+
+table{
+    width:60%
+}
+th{
+    height: 20px;
+}
+th,td{
+    text-align: center;
+    padding: 20px;
+}
+table, th, td {
+    border: 1px solid rgb(53, 161, 68);
+    border-collapse: collapse;
+  }
+.personal
+{  height:2.5%;
+    background-color: rgb(36, 150, 216);
+}
+.tech
+{  height:2.5%;
+    background-color: rgb(216, 36, 186);
+}
+.name
+{
+    height:2.5%;
+    background-color: rgb(231, 139, 19);
+}
