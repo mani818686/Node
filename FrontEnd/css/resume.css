@@ -25,13 +25,16 @@ table, th, td {
 .personal
 {  height:2.5%;
     background-color: rgb(36, 150, 216);
+    width:60%
 }
 .tech
 {  height:2.5%;
     background-color: rgb(216, 36, 186);
+    width:60%
 }
 .name
 {
     height:2.5%;
     background-color: rgb(231, 139, 19);
+    width:60%
 }
