@@ -4,7 +4,7 @@ app.use(express.static(__dirname+'/FrontEnd/'))
 var port=process.env.PORT||3000;
 app.get('/',function(req,res)
 {
-    res.sendFile('html/index.html');
+    res.sendFile(__dirname+'/FrontEnd/html/index.html');
 })
 app.listen(port,function()
 {
