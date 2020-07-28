@@ -2,7 +2,7 @@ var express=require('express');
 var app=express();
 app.get('/',function(req,res)
 {
-    res.send('Hello World');
+    res.sendFile('index.html');
 })
 app.use(express.static(__dirname+'/FrontEnd/'))
 var port=process.env.PORT||3000;
