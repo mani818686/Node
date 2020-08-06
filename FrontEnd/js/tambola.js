@@ -20,7 +20,7 @@ function generate()
    document.getElementById('put').innerHTML=x;
    document.getElementById(x).innerHTML=x;
    setcount.add(x);
-   if(setcount.size==100)
+   if(setcount.size==101)
    {alert('Game Over! Play Again ');
    setcount.clear();
     }   
