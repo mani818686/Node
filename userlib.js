@@ -1,5 +1,5 @@
 
-const usermodel=require('./backend/models/usermodel');
+const usermodel=require('./Backend/models/usermodel');
 module.exports = {
    
     createUser: function(userObject){

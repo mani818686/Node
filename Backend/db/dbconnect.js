@@ -5,9 +5,8 @@ module.exports={
         var optionsJSON = {   useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true };
         var connection_string="mongodb+srv://dbuser:dbuser@cluster0.vsbgp.mongodb.net/user?retryWrites=true&w=majority" || process.env.connection_string;
         mongoose.connect(connection_string, optionsJSON);
-        
-        var connectionObj = mongoose.connection;
 
+        var connectionObj = mongoose.connection;
         connectionObj.on('connected', function(){
             console.log("CONNECTED TO DB");
         })
@@ -23,4 +22,5 @@ module.exports={
         mongoose.disconnect();   
     }
 }
+
 
