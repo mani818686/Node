@@ -1,0 +1,15 @@
+table{
+    margin-left: 10%;
+}
+
+td{
+    
+    color:black;
+    font-style:normal;
+    padding: 15px;
+    
+}
+table, th, td {
+    border: 2px solid rgb(21, 219, 48);
+    border-collapse: collapse;
+  }
