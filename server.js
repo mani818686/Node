@@ -10,7 +10,7 @@ var port=process.env.PORT||3000;
 
 app.get('/',function(req,res)
 {
-    res.sendFile(__dirname+'/FrontEnd/html/index.html');
+    res.sendFile('/FrontEnd/html/index.html');
 })
 
 app.get('/api/user',function(req,res)
