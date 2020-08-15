@@ -3,7 +3,8 @@ const mongoose=require('mongoose');
 module.exports={
     connect : function(){
         var optionsJSON = {   useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true };
-        mongoose.connect('mongodb+srv://dbuser:dbuser@cluster0.vsbgp.mongodb.net/user?retryWrites=true&w=majority', optionsJSON);
+        var connection_string="mongodb+srv://dbuser:dbuser@cluster0.vsbgp.mongodb.net/user?retryWrites=true&w=majority"||process.env.connection_string;
+        mongoose.connect(connection_string, optionsJSON);
         
         var connectionObj = mongoose.connection;
 
