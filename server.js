@@ -16,7 +16,7 @@ app.get('/',function(req,res)
 app.get('/api/user',function(req,res)
 {
      userLib.getAllUsers(function(err, arrayOfUsers){
-         console.log(arrayOfUsers);
+        // console.log(arrayOfUsers);
         res.json(arrayOfUsers);
      })
 })

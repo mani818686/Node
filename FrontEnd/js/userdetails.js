@@ -12,9 +12,9 @@
             r+="</tr>";
             for(var row in result)
             {   r+="<tr>";
-                r+="<td>"+row.username+"</td>";
-                r+="<td>"+row.age+"</td>";
-                r+="<td>"+row.email+"</td>";
+                r+="<td>"+result[row].username+"</td>";
+                r+="<td>"+result[row].age+"</td>";
+                r+="<td>"+result[row].email+"</td>";
                 r+="</tr>";
             }
             r+="</table>";
@@ -24,7 +24,8 @@
           console.log(err);
         }
       });
-      
-         
- }
+     
+     $("button").click(function(){
+        $("#messages").css("display","inline");
+ })}
  showdata();
