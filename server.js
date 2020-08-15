@@ -22,7 +22,7 @@ app.get('/api/user',function(req,res)
 app.post('/api/user',function(req,res)
 {
     userLib.createUser(req.body)
-    console.log(req.body);
+    //console.log(req.body);
     res.redirect('/html/userdetails.html');
 }); 
 app.listen(port,function()
