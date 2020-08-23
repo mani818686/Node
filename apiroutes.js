@@ -17,7 +17,7 @@ router.post("/validate",function(req,res){
     {
         if(err)
         res.send(err);
-        else if(req.body.password!=result[0].password)
+        else if(req.body.password==result[0].password)
         res.redirect("/");
         else
         res.redirect("/login");

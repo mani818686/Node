@@ -1,8 +1,7 @@
 const userdetails=require("../models/userdetails");
 module.exports={
-    createUser:function(userobject,cb){
-
-        var user=new userdetails(userobject,cb);
+    createUser:function(userobject){
+        var user=new userdetails(userobject);
         user.save();
     },
     getAllUsers : function(cb){
