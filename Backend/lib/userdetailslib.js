@@ -1,19 +1,20 @@
 const userdetails=require("../models/userdetails");
 module.exports={
-    createUser:function(userobject){
+    createUser:function(userobject,cb){
         var user=new userdetails(userobject);
-        user.save();
+        user.save(function(err,result)
+        {
+            cb(err,result);
+        });
     },
-    getAllUsers : function(cb){
-        userdetails.find({},function(err,allusers){
+    getAllUsers : function(query,cb){
+        userdetails.find(query,function(err,allusers){
              cb(err,allusers);
         }
         )
     },
     validate: function(userobj,cb){
-        var query={username:userobj.username};
-        userdetails.find(query,function(err,result){
-            //console.log(result);
+        userdetails.find(userobj,function(err,result){
             cb(err,result);
         })
     }
